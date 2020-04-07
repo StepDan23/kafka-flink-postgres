@@ -6,8 +6,8 @@ def connect_kafka_producer(servers):
     _producer = None
     try:
         _producer = KafkaProducer(bootstrap_servers=servers,
-                                  value_serializer=lambda v: dumps(v).encode('utf-8')
-                                  )
+                                  value_serializer=lambda v: dumps(v).encode('utf-8'),
+                                  compression_type='gzip')
     except Exception as ex:
         print('Exception while connecting Kafka')
         print(str(ex))
