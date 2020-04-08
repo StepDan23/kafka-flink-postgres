@@ -1,2 +1,2 @@
 kafka-python==2.0.1
-apache-flink==1.10.0
+python-dotenv==0.12.0

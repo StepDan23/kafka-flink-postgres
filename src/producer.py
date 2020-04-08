@@ -23,9 +23,6 @@ def get_clickstream_entry():
     return new_dict
 
 
-# -------------------------------------------------
-# Begin
-# -------------------------------------------------
 if __name__ == "__main__":
 
     my_server = 'localhost:9092'
@@ -49,4 +46,4 @@ if __name__ == "__main__":
 
         sleep(3)
 
-# TODO: add notebook for producer Kafka
+# TODO: spark_streaming_job.py and container for pyspark
